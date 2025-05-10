@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FTC Robot Visualizer</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>FTC Robot Visualizer</h1>
+    <div>
+        <label>Robot Length (inches):</label>
+        <input type="number" id="robotLength" value="12">
+        <label>Robot Width (inches):</label>
+        <input type="number" id="robotWidth" value="12">
+        <label>Position X (inches):</label>
+        <input type="number" id="robotX" value="0">
+        <label>Position Y (inches):</label>
+        <input type="number" id="robotY" value="0">
+        <label>Robot Angle (degrees):</label>
+        <input type="number" id="robotAngle" value="0">
+        <button onclick="updateRobot()">Update Robot</button>
+    </div>
+    <canvas id="fieldCanvas"></canvas>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
