@@ -25,3 +25,24 @@
     <script src="scripts/app.js"></script>
 </body>
 </html>
+
+<h2>Enter Waypoints</h2>
+<table id="waypointsTable">
+    <tr>
+        <th>Waypoint</th>
+        <th>X (inches)</th>
+        <th>Y (inches)</th>
+        <th>Heading (degrees)</th>
+    </tr>
+    <!-- Example waypoint rows -->
+    <tr>
+        <td>Start</td>
+        <td><input type="number" value="0"></td>
+        <td><input type="number" value="0"></td>
+        <td><input type="number" value="0"></td>
+    </tr>
+    <!-- More waypoints will be added dynamically -->
+</table>
+<button onclick="addWaypoint()">Add Waypoint</button>
+<button onclick="startPath()">Go</button>
+
